@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SigninActivity"
+    android:background="@color/purpleMain">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_marginStart="57dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="55dp"
+                android:id="@+id/textView"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:text="С возвращением!"
+                android:textColor="@color/white"
+                android:textSize="32dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="71dp"
+                android:layout_width="251dp"
+                android:layout_height="310dp"
+                app:srcCompat="@drawable/ic_logo2" />
+
+            <TextView
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="78dp"
+                android:id="@+id/textView4"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:text="Войти"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="49dp"
+                android:layout_marginEnd="40dp"
+                android:id="@+id/loginText"
+
+                android:layout_width="329dp"
+                android:layout_height="70dp"
+
+                android:hint="Логин"
+                android:textColorHint="@color/purpleText"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:paddingStart="32dp"
+                android:paddingEnd="202dp"
+                android:drawableLeft="@drawable/ic_person_purple"
+                android:background="@drawable/white_text_view"/>
+
+            <!--android:paddingEnd="спросить как сделать отпступ от иконки"-->
+            <TextView
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:id="@+id/passText"
+
+                android:layout_width="329dp"
+                android:layout_height="70dp"
+
+                android:inputType="numberPassword"
+                android:hint="Пароль"
+                android:textColorHint="@color/white"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:paddingStart="37dp"
+                android:drawableLeft="@drawable/ic_key"
+                android:background="@drawable/green_text_view"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:onClick="Continue"
+                android:layout_marginStart="119dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="117dp"
+                android:id="@+id/Continue"
+
+
+                android:layout_width="175dp"
+                android:layout_height="59dp"
+
+                android:text="Продолжить"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:textColor="@color/purpleText"
+                android:textStyle="bold"
+                android:background="@drawable/resume_signin_act_btn"/>
+
+            <TextView
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="227dp"
+                android:id="@+id/textView7"
+
+                android:layout_width="155dp"
+                android:layout_height="20dp"
+
+                android:text="Забыли пароль>"
+                android:textSize="17dp"
+                android:textColor="@color/white"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:onClick="RecoverPassword"
+
+                android:layout_marginStart="155dp"
+                android:layout_marginTop="-20dp"
+                android:layout_marginEnd="15dp"
+                android:id="@+id/RecoverPassword"
+
+                android:layout_width="241dp"
+                android:layout_height="20dp"
+
+                android:text="Восстановить пароль"
+                android:textAllCaps="false"
+                android:textSize="17dp"
+                android:textColor="@color/turquoiseText"
+                android:textStyle="bold"
+
+                android:background="@drawable/empty_btn"/>
+
+            <!--<TextView
+                android:layout_marginStart="155dp"
+                android:layout_marginTop="-20dp"
+                android:layout_marginEnd="15dp"
+                android:id="@+id/textView8"
+
+                android:layout_width="241dp"
+                android:layout_height="20dp"
+
+                android:text="Восстановить пароль"
+                android:textSize="17dp"
+                android:textColor="@color/turquoiseText"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="62dp"/>-->
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

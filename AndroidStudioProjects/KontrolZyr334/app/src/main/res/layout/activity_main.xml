@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/purpleMain">
+
+    <TextView
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="393dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="315dp"
+        android:id="@+id/textView2"
+
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+
+        android:text="Магазин видеоигр"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="590dp"
+        android:id="@+id/textView"
+
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+
+        android:text="Добро пожаловать!"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="376dp"
+        android:id="@+id/imageView2"
+
+        android:layout_width="112dp"
+        android:layout_height="138dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="SwitchingToSigninActivity"
+
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="518dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="136dp"
+        android:id="@+id/LogInToYourAccount"
+
+        android:layout_width="329dp"
+        android:layout_height="76dp"
+
+        android:text="Войдите в аккаунт"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+
+        android:paddingStart="32dp"
+        android:paddingEnd="105dp"
+
+        android:drawableLeft="@drawable/ic_person"
+        android:background="@drawable/empty_main_act_btn"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="SwitchingToRegActivity"
+
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="614dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/Register"
+
+
+        android:layout_width="329dp"
+        android:layout_height="76dp"
+
+        android:text="Зарегистрироваться"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:drawableLeft="@drawable/ic_how_to_reg"
+
+        android:paddingStart="30dp"
+        android:paddingEnd="92dp"
+
+        android:background="@drawable/filled_main_act_btn"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

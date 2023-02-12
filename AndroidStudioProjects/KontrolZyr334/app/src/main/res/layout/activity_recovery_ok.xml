@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkPurple"
+    tools:context=".RecoveryOkActivity">
+
+    <TextView
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="563dp"
+        android:id="@+id/textView8"
+
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+
+        android:text="Восстановление пароля"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="409dp"
+        android:id="@+id/textView13"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Запрос отправлен!"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="284dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="319dp"
+        android:id="@+id/textView18"
+
+        android:layout_width="358dp"
+        android:layout_height="77dp"
+
+        android:text="Проверьте электронную почту"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:gravity="center_horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="164dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="327dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_successfully" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="525dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="97dp"
+        android:id="@+id/ToReturn"
+
+        android:layout_width="175dp"
+        android:layout_height="59dp"
+
+        android:text="Вернуться"
+        android:textSize="16dp"
+        android:textColor="@color/purpleText"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+
+        android:background="@drawable/resume_signin_act_btn"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

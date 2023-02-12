@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecoveryActivity"
+    android:background="@color/darkPurple">
+
+    <TextView
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="568dp"
+        android:id="@+id/textView14"
+
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+
+        android:text="Восстановление пароля"
+        android:textSize="32dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="316dp"
+        android:id="@+id/textView15"
+
+        android:layout_width="358dp"
+        android:layout_height="73dp"
+
+        android:text="Пожалуйста, введите логин или эл. почту, на которые был зарегистрирован аккаунт"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:gravity="center_horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="365dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="246dp"
+        android:id="@+id/textView16"
+
+        android:layout_width="353dp"
+        android:layout_height="70dp"
+
+        android:inputType="textEmailAddress"
+        android:hint="Логин или email"
+        android:textSize="16dp"
+        android:textColorHint="@color/purpleText"
+        android:gravity="center_vertical"
+
+        android:paddingStart="34dp"
+        android:paddingEnd="145dp"
+
+        android:drawableStart="@drawable/ic_envelope_purple"
+        android:background="@drawable/white_text_view"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="462dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="160dp"
+        android:id="@+id/Send"
+
+        android:layout_width="175dp"
+        android:layout_height="59dp"
+
+        android:text="Отправить"
+        android:textStyle="bold"
+        android:textColor="@color/purpleText"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+
+        android:background="@drawable/resume_signin_act_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<TextView
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="549dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="111dp"
+        android:id="@+id/textView17"
+
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+
+        android:text="Вернуться"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="549dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="111dp"
+        android:id="@+id/ToReturn"
+
+        android:layout_width="241dp"
+        android:layout_height="20dp"
+
+        android:text="Вернуться"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+
+        android:background="@drawable/empty_btn"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

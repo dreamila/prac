@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegActivity"
+    android:background="@color/purpleMain">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="53dp"
+                android:layout_marginEnd="53dp"
+                android:id="@+id/textView3"
+
+                android:layout_width="318dp"
+                android:layout_height="wrap_content"
+
+                android:text="Создайте аккаунт"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="32dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_marginStart="81dp"
+                android:layout_marginTop="118dp"
+                android:layout_marginEnd="89dp"
+                android:id="@+id/textView9"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Зарегестрируйтесь"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="39dp"
+                android:layout_marginEnd="42dp"
+                android:id="@+id/logoremail"
+
+                android:layout_width="329dp"
+                android:layout_height="66dp"
+
+                android:inputType="textEmailAddress"
+                android:text="Логин или email"
+                android:textColor="@color/purpleText"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+
+                android:paddingStart="32dp"
+
+                android:drawableStart="@drawable/ic_person_purple"
+                android:background="@drawable/white_text_view"/>
+
+            <TextView
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="42dp"
+                android:id="@+id/passText"
+
+                android:layout_width="329dp"
+                android:layout_height="66dp"
+
+                android:inputType="numberPassword"
+                android:hint="Пароль"
+                android:textColorHint="@color/white"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:paddingStart="33dp"
+                android:drawableStart="@drawable/ic_key"
+                android:background="@drawable/empty_reg_act_text_view"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:onClick="EmailConfirmation"
+
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="42dp"
+                android:id="@+id/EmailConfirmation"
+
+                android:layout_width="329dp"
+                android:layout_height="66dp"
+
+                android:text="Подтверждение эл. почты"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+
+                android:paddingStart="34dp"
+                android:paddingEnd="45dp"
+
+                android:drawableStart="@drawable/ic_envelope"
+                android:background="@drawable/green_btn"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:onClick="Continue2"
+
+                android:layout_marginStart="114dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="122dp"
+                android:id="@+id/Continue"
+
+                android:layout_width="175dp"
+                android:layout_height="55dp"
+
+                android:text="Продолжить"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/purpleText"
+                android:background="@drawable/resume_signin_act_btn"/>
+
+            <TextView
+                android:layout_marginStart="41dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginEnd="184dp"
+                android:id="@+id/textView12"
+
+                android:layout_width="186dp"
+                android:layout_height="21dp"
+
+                android:text="Уже есть аккаунт?"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="17dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:onClick="GoBack"
+
+                android:layout_marginStart="209dp"
+                android:layout_marginTop="-21dp"
+                android:layout_marginEnd="49dp"
+                android:id="@+id/GoBack"
+
+
+                android:layout_width="153dp"
+                android:layout_height="19dp"
+
+                android:text="Вернуться назад"
+                android:textColor="@color/turquoiseBtn"
+                android:textSize="17dp"
+                android:textAllCaps="false"
+                android:background="@drawable/empty_btn"/>
+
+            <!--<TextView
+                android:layout_marginStart="209dp"
+                android:layout_marginTop="-24dp"
+                android:layout_marginEnd="49dp"
+                android:id="@+id/textView13"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Вернуться назад"
+                android:gravity="center"
+                android:textColor="@color/turquoiseBtn"
+                android:textSize="17dp"
+                />-->
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
